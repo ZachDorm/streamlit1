@@ -1,5 +1,6 @@
 import streamlit as st
-import leafmap.foliumap as leafmap
+import leafmap
+from leafmap import foliumap as leafmap
 import xyzservices.providers as xyz
 import basal_and_bark
 from basal_and_bark import basal_and_bark as basal

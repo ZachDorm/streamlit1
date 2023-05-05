@@ -11,11 +11,12 @@ st.expander("test")
 m= basal_and_bark.Map(center = [40,-100], zoom = 4, test = "test", scroll_wheel_zoom = True)
 m= leafmap.Map(center = [40,-100], zoom = 4, test = "test", scroll_wheel_zoom = True)
 
+radio = st.radio('URL or dropdown', ('URL', 'dropdown'))
+
 col1, col2 = st.columns([4,1])
 
 with col2:
 
-    radio = st.radio('URL or dropdown', ('URL', 'dropdown'))
 
     if radio == 'URL':
         input = st.text_input('Please enter url for basemap', 'Esri.WorldImagery')
